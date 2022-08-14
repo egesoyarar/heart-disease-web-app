@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Diseases</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="main">
+        <div class="info">
+            <h3 style="font-size: 48px; color: #f9faf8;">Welcome to Predictor of Heart Disease</h3>
+        </div>
+    </div>
+    <div class="info1">
+        <form id="form_patient_data" method="POST" action="predict">
+            <div class="labels">
+                <h3 style="font:bolder;">Please Enter Values</h3>
+                <div>
+                    <label for="age">Age:</label>
+                    <div>
+                        <input type="number" id="age" name="age">
+                        <br>
+                    </div>
+                </div>
+                <div>
+                    <label for="sex">Sex:</label>
+                    <div>
+                        <select name="sex" id="sex">
+                        <option value="0" selected disablezd hidden>Female</option>
+                        <option value="1">Male</option>
+                        </select>
+                        <br>
+                    </div>
+                </div>
+                <div>
+                    <label for="cp">Chest pain type (0-3):</label>
+                    <div>
+                        <select name="cp" id="cp">
+                            <option value="0" selected disablezd hidden>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <br>
+                    </div>
+                </div>
+                <div>
+                    <label for="chol">Serum cholestoral:</label>
+                    <div>
+                        <input type="number" id="chol" name="chol">
+                        <br>
+                    </div>
+                </div>
+                <label for="thalach">Maximum heart rate:</label>
+                <div>
+                    <input type="number" id="thalach" name="thalach">
+                    <br>
+                </div>
+                <label for="ca">Number of major vessels (0-3):</label>
+                <div>
+                    <select name="ca" id="ca">
+                        <option value="0" selected disablezd hidden>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Copyright © egesoyarar 2022
+        </p>
+    </div>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 40px;
+            align-items: center;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+            align-items: center;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 15px;
+        }
+        
+        .main,
+        .footer {
+            background-color: #1f2937;
+            color: #f9faf8;
+            padding: 15px;
+        }
+        
+        .info1 {
+            display: flex;
+            justify-content: center;
+            border-style: double;
+            background-color: #e0e8f5;
+        }
+        
+        .labels {
+            padding: 65px;
+            color: #1a1c20;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 900;
+        }
+        
+        input {
+            padding: 5px 25px;
+        }
+        
+        select {
+            padding: 5px 40px;
+        }
+        
+        button {
+            padding: 5px 35px;
+            margin-left: 95px;
+        }
+    </style>

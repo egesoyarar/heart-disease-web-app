@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="main">
+        <div class="info">
+            <h3 style="font-size: 48px; color: #f9faf8;">Welcome to Predictor of Heart Disease</h3>
+        </div>
+    </div>
+    <div class="info2">
+        <form id="form_action" method="GET" action="welcome">
+            <div class="labels">
+                <div>
+                    <h3>{{ result }}</h3>
+                    <button type="back">Back</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Copyright © egesoyarar 2022
+        </p>
+    </div>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 40px;
+            align-items: center;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+            align-items: center;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 15px;
+        }
+        
+        .main,
+        .footer {
+            background-color: #1f2937;
+            color: #f9faf8;
+            padding: 15px;
+        }
+        
+        .info2 {
+            display: flex;
+            justify-content: center;
+            border-style: double;
+            background-color: #e0e8f5;
+        }
+        
+        .labels {
+            padding: 65px;
+            color: #1a1c20;
+            text-align: left;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 900;
+        }
+        
+        input {
+            padding: 5px 25px;
+        }
+        
+        select {
+            padding: 5px 40px;
+        }
+        
+        button {
+            padding: 5px 35px;
+            margin-left: 220px;
+        }
+    </style>
